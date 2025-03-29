@@ -652,10 +652,11 @@ html, body{
 }
 .footer-nav li{
     display: inline;
-    padding: 0 .5em;
+    float: right;
 }
 .footer-nav i{
    width: 30px;
    height: 30px;
    font-size:xx-large;
+   padding: 0;
 }
