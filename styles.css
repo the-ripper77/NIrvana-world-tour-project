@@ -586,19 +586,19 @@ html, body{
 }
 .tour-item.tour-date{
     color: #555;
-    font-size: 13.3px;
+    font-size: 15px;
     font-weight: bold;
-    width: 18%;
+    width: 25%;
 }
 .tour-city{
-    width: 21%;
+    width: 25%;
 
 }
 .tour-arena{
-    width: 42%;
+    width: 30%;
 }
 .tour-ticket{
-    max-width: 19%;
+    max-width: 20%;
 }
 .btn-primary{
     color: white;
