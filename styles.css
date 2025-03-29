@@ -218,4 +218,444 @@ html, body{
    height: 30px;
    font-size:xx-large;
    padding: 0;
+}@import url(https://fonts.google.com/specimen/Lora);
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff");
+    src: url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: Lora;
+  box-sizing: border-box;
+  color: #777;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+.main-header{
+    background-color: rgb(247, 8, 20);
+    background-image: url(image/1000032002.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 1cm;
+}
+
+.head-nav .unorder{
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    font-size:  1.2em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.head-nav li {
+    display: inline;
+}
+.head-nav a{
+    padding: 1.2em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.head-nav a:hover{
+    background-color: rgba(255,255,255, .3);
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+.head-band-name{
+    font-size: 6em;
+}
+
+.btn {
+    text-align:center;
+    vertical-align: middle;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.btn-head.btn-play{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(236, 228, 228);
+    text-decoration: none;
+    border-radius: 20px;  
+    font-size: 2em;
+    width: 75px;
+    height: 75px;
+    background-color:rgba(241, 32, 32, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.btn-head.btn-play:hover{
+    background-color: rgb(194, 51, 51);
+}
+.center-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-head{
+    color: white;
+    border: 2px solid rgb(240, 217, 219);
+    background-color: rgb(194, 51, 51);
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.btn-head a{
+    text-decoration: none;
+    color: white;
+}
+.btn-head:hover{
+    background-color: #777;
+}
+
+
+/*HOME*/
+.body-title{
+    font-family: "Booter - Zero Zero";
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+}
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.tour-row{
+    border-bottom: 1px solid black ;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+    width: 15%;
+}
+.tour-date{
+    color: #555;
+    font-weight: bold;
+}
+.tour-city{
+    width: 30%;
+    font-size: 13px;
+}
+.tour-arena{
+    width: 30%;
+    font-size: 13px;
+}
+.tour-ticket{
+    max-width: 19%;
+}
+.btn-primary{
+    color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    background-color: rgb(194, 51, 51);
+}
+.btn.btn-primary:hover{
+    background-color: rgb(248, 9, 9);
+}
+
+/* ABOUT */
+.kurt-cobain{
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: left;
+    border-radius: 50%;
+    margin: 15px;
+}
+.kurt-doc{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+.main-footer{
+    background-color: rgb(17, 4, 4);
+    color: white;
+    padding: .25cm 0;
+    margin: 0;
+    
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    display: inline;
+    padding: 0 .5em;
+}
+.footer-nav i{
+   width: 30px;
+   height: 30px;
+   font-size:xx-large;
+   padding: 0;
+}@import url(https://fonts.google.com/specimen/Lora);
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff");
+    src: url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+  font-family: Lora;
+  box-sizing: border-box;
+  color: #777;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+.main-header{
+    background-color: rgb(247, 8, 20);
+    background-image: url(image/1000032002.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 1cm;
+}
+
+.head-nav .unorder{
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    font-size:  1.2em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255, .3);
+}
+.head-nav li {
+    display: inline;
+}
+.head-nav a{
+    padding: 1.2em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.head-nav a:hover{
+    background-color: rgba(255,255,255, .3);
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+.head-band-name{
+    font-size: 6em;
+}
+
+.btn {
+    text-align:center;
+    vertical-align: middle;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.btn-head.btn-play{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    color: rgb(236, 228, 228);
+    text-decoration: none;
+    border-radius: 20px;  
+    font-size: 2em;
+    width: 75px;
+    height: 75px;
+    background-color:rgba(241, 32, 32, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.btn-head.btn-play:hover{
+    background-color: rgb(194, 51, 51);
+}
+.center-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-head{
+    color: white;
+    border: 2px solid rgb(240, 217, 219);
+    background-color: rgb(194, 51, 51);
+    border-radius: 0;
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.btn-head a{
+    text-decoration: none;
+    color: white;
+}
+.btn-head:hover{
+    background-color: #777;
+}
+
+
+/*HOME*/
+.body-title{
+    font-family: "Booter - Zero Zero";
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+}
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.tour-row{
+    border-bottom: 1px solid black ;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+    width: 15%;
+}
+.tour-date{
+    color: #555;
+    font-weight: bold;
+}
+.tour-city{
+    width: 30%;
+    font-size: 13px;
+}
+.tour-arena{
+    width: 30%;
+    font-size: 13px;
+}
+.tour-ticket{
+    max-width: 19%;
+}
+.btn-primary{
+    color: white;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    background-color: rgb(194, 51, 51);
+}
+.btn.btn-primary:hover{
+    background-color: rgb(248, 9, 9);
+}
+
+/* ABOUT */
+.kurt-cobain{
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: left;
+    border-radius: 50%;
+    margin: 15px;
+}
+.kurt-doc{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/*footer*/
+.main-footer{
+    background-color: rgb(17, 4, 4);
+    color: white;
+    padding: .25cm 0;
+    margin: 0;
+    
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    display: inline;
+    padding: 0 .5em;
+}
+.footer-nav i{
+   width: 30px;
+   height: 30px;
+   font-size:xx-large;
+   padding: 0;
 }
