@@ -583,19 +583,19 @@ html, body{
 .tour-item{
     display: inline-block;
     padding-right: .5em;
-    width: 15%;
 }
-.tour-date{
+.tour-item.tour-date{
     color: #555;
+    font-size: 13.3px;
     font-weight: bold;
+    width: 18%;
 }
 .tour-city{
-    width: 30%;
-    font-size: 13px;
+    width: 21%;
+
 }
 .tour-arena{
-    width: 30%;
-    font-size: 13px;
+    width: 42%;
 }
 .tour-ticket{
     max-width: 19%;
