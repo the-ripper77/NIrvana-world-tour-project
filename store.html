@@ -3,83 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirvana Store</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        .audio-controls {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        audio {
-            width: 200px;
-        }
-        #playButton {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        #playButton:hover {
-            background: #45a049;
-        }
-    </style>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ABOUT</title>
 </head>
-<body>
-    <div class="audio-controls">
-        <button id="playButton">Play Music</button>
-        <audio id="backgroundMusic" loop>
-            <source src="nirvana.mp3" type="audio/mpeg">
-            <source src="nirvana.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-    <script>
-        const audio = document.getElementById('backgroundMusic');
-        const playButton = document.getElementById('playButton');
+<header class="main-header">
+    <nav class="head-nav">
+        <ul class="unorder">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="store.html">STORE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
         
-        // Function to handle play/pause
-        function togglePlay() {
-            if (audio.paused) {
-                audio.play();
-                playButton.textContent = 'Pause Music';
-            } else {
-                audio.pause();
-                playButton.textContent = 'Play Music';
-            }
-        }
-
-        // Add click event to button
-        playButton.addEventListener('click', togglePlay);
-
-        // Try to autoplay when page loads
-        window.addEventListener('load', function() {
-            audio.play().catch(function(error) {
-                console.log("Autoplay prevented:", error);
-                // Show play button if autoplay fails
-                playButton.style.display = 'block';
-            });
-        });
-
-        // Error handling
-        audio.addEventListener('error', function(e) {
-            console.error('Error loading audio:', e);
-            alert('Error loading audio file. Please check if the file exists and is in the correct location.');
-        });
-    </script>
+    </nav>
+    <h1 class="band-name head-band-name">NIRVANA</h1>
+  
+    <button class="btn btn-head btn-play" type="button"> <a href="https://music.youtube.com/watch?v=heIog9Rv7Qw&si=J30bC0xeLD5frxj_" target="_self"> &#9658 </a> </button> 
+    <div class="center-group">
+        <button class="btn btn-head" type="button"><a href="https://www.nirvana.com" target="_blank">EXPLORE KURT COBAIN GEMS</a></button>
+    </div>
+</header>
+<body>
+    <section class="content-section container">
+        <h2 class="section-header">SHOP NOW</h2>
+        <img src="image/dress 1.jpeg" width="150" height="300">
+        <div>
+            <span>NPR 10,500</span>
+            <br/>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <img src="image/dress 2.jpeg" width="150" height="300">
+        <div>
+            <span>NPR 16,500</span>
+            <br/>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <img src="image/dress 5.jpeg" width="150" height="300">
+        <div>
+            <span>NPR 9,500</span>
+            <br/>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <img src="image/dress 6.jpeg" width="150" height="300">
+        <div>
+            <span>NPR 8,500</span>
+            <br/>
+            <button type="button">ADD TO CART</button>
+        </div>
+    </section>
+    <section class="conttent-section container">
+        <h2 class="section-header">DEAL OF THE DAY</h2>
+        <img src="image/dress 3.jpeg" width="150" height="300">
+        <div>
+            <br/><span>NPR 5,500</span>
+            <br/>
+            <del>NPR 10,500</del>
+            <button type="button">ADD TO CART</button>
+        </div>
+        <img src="image/dress 4.jpeg" width="150" height="300">
+        <div>
+            <span>NPR 4,500</span>
+            <br/>
+            <del>NPR 9,500</del>
+            <br/>
+            <button type="button">ADD TO CART</button>
+        </div>
+        
+    </section>
+    <section class="content-section container">
+        <h2 class="section-header">CART</h2>
+        <div>
+            <strong>ITEM</strong>
+            &gt;&lt;
+            <strong>PRICE</strong>
+            &gt;&lt
+            <strong>QUANTIY</strong>
+        </div>
+        <div>
+        <img src="image/dress 3.jpeg" width="100" height="120">
+        &gt;&lt;
+        <span>NPR 5,500</span>
+        &gt;&lt;
+        <input value="1">
+        <button type="button">REMOVE</button>
+        </div>
+        <div>
+        <img src="image/dress 4.jpeg" width="100" height="120">
+        &gt;&lt;
+        <span>NPR 4,500</span>
+        &gt;&lt;
+        <input value="2">
+        <button type="button">REMOVE</button>
+        </div>
+    </section>
+    <hr>
+    <div>
+        <strong>Total</strong>
+        <span>10,000</span>
+    </div>
+    <button type="button">PURCHASE</button>
+    <footer class="main-footer">
+        <div class = "container main-footer-container">
+            <h2 class="band-name">NIRVANA</h2>
+            <ul class="nav footer-nav">
+                <li><a href="https://www.youtube.com/channel/UCFMZHIQMgBXTSxsr86Caazw" target="_blank"><i class="Fa-fu fab fa-youtube"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh?si=bL6ncY90TCSlWrhUSTU32Q" target="_blank"><i class="Fa-fu fab fa-spotify"></i></a></li>
+                <li><a href="https://x.com/nirvana" target="_blank"><i class="fa-fu fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
