@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana Store</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .audio-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        audio {
+            width: 200px;
+        }
+        #playButton {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #playButton:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-controls">
+        <button id="playButton">Play Music</button>
+        <audio id="backgroundMusic" loop>
+            <source src="nirvana.mp3" type="audio/mpeg">
+            <source src="nirvana.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+        const audio = document.getElementById('backgroundMusic');
+        const playButton = document.getElementById('playButton');
+        
+        // Function to handle play/pause
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = 'Pause Music';
+            } else {
+                audio.pause();
+                playButton.textContent = 'Play Music';
+            }
+        }
+
+        // Add click event to button
+        playButton.addEventListener('click', togglePlay);
+
+        // Try to autoplay when page loads
+        window.addEventListener('load', function() {
+            audio.play().catch(function(error) {
+                console.log("Autoplay prevented:", error);
+                // Show play button if autoplay fails
+                playButton.style.display = 'block';
+            });
+        });
+
+        // Error handling
+        audio.addEventListener('error', function(e) {
+            console.error('Error loading audio:', e);
+            alert('Error loading audio file. Please check if the file exists and is in the correct location.');
+        });
+    </script>
+</body>
+</html>
